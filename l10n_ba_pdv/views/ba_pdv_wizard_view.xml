@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+
+    <record model="ir.ui.view" id="ba_pdv_wizard_form_view">
+        <field name="name">ba_pdv_wizard_form_view</field>
+        <field name="model">ba.pdv.wizard</field>
+        <field name="arch" type="xml">
+            <form string="PDV obračun">
+                <group>
+                    <group>
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                    </group>
+                    <group>
+                        <field name="company_id" />
+                        <field name="enabavke_last_id" />
+                        <field name="eisporuke_last_id" />
+                    </group>
+                </group>
+                <footer>
+ 
+                    <button string="Generiši xlsx" name="action_generate_xlsx" type="object" class="btn-primary"/>
+                    <button string="Enabavke CSV" name="action_generate_enabavke_csv" type="object" class="btn-primary"/>
+                    <button string="Eisporuke CSV" name="action_generate_eisporuke_csv" type="object" class="btn-primary"/>
+
+                    <button string="Otkaži" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+
+    </record>
+
+    <record id="action_ba_pdv" model="ir.actions.act_window">
+        <field name="name">PDV Obračun</field>
+        <field name="res_model">ba.pdv.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

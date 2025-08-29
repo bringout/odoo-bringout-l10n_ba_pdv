@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+<!--
+              #parent="account.menu_finance_reports"
+-->
+
+    <menuitem id="ba_pdv_menu"
+              name="PDV obračun Bosna i Hercegovina"
+              sequence="10"
+              action="action_ba_pdv"
+              parent="account.menu_finance_entries_generate_entries"
+              
+    />
+
+</data>
+</odoo>

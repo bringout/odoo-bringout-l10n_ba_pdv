@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ba_pdv_wizard,ba.pdv.wizard,model_ba_pdv_wizard,account.group_account_manager,1,1,1,1
+access_ba_pdv_nabavke,ba.pdv.nabavke,model_ba_pdv_nabavke,account.group_account_manager,1,1,1,1
+access_ba_pdv_isporuke,ba.pdv.isporuke,model_ba_pdv_isporuke,account.group_account_manager,1,1,1,1

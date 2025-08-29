@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+
+   <report 
+      id="pdv_xlsx_report"
+      model="ba.pdv.wizard"
+      string="(object._get_report_base_filename())"
+      report_type="xlsx"
+      name="l10n_ba_pdv.pdv_xlsx_report"
+      file="BA_PDV_xlsx"
+      attachment_use="False"
+   />
+
+  
+   <report
+    id="enabavke_csv"
+    model="ba.pdv.wizard"
+    string="(object._get_report_base_filename())"
+    report_type="csv"
+    name="l10n_ba_pdv.enabavke_csv"
+    file="pdv_enabavke"
+    attachment_use="False"
+  />
+
+   <report
+    id="eisporuke_csv"
+    model="ba.pdv.wizard"
+    string="(object._get_report_base_filename())"
+    report_type="csv"
+    name="l10n_ba_pdv.eisporuke_csv"
+    file="pdv_eisporuke"
+    attachment_use="False"
+  />
+
+<!--
+  <report
+      id="partner_csv_2"
+      model="res.partner"
+      string="Print to CSV 2"
+      report_type="csv"
+      name="l10n_ba_pdv.partner_csv_2"
+      file="res_partner_2"
+      attachment_use="False"
+    />
+
+   <report
+      id="users_csv"
+      model="res.users"
+      string="Print users to CSV"
+      report_type="csv"
+      name="l10n_ba_pdv.users_csv"
+      file="res_users"
+      attachment_use="False"
+    />
+
+  
+-->
+
+</odoo>
